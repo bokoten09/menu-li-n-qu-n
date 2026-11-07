@@ -265,7 +265,7 @@
 
   <!-- Action Sections -->
   <div class="action-container">
-    <!-- Mục 1: Tải Menu Liên Quân (Link note2s của bạn) -->
+    <!-- Mục 1: Tải Menu Liên Quân -->
     <div class="action-card">
       <div class="card-info">
         <div class="card-icon icon-download">
@@ -280,7 +280,7 @@
       </a>
     </div>
 
-    <!-- Mục 2: Get Key Menu Liên Quân (Đi qua GTraffic bảo mật đúng chuẩn hệ thống) -->
+    <!-- Mục 2: Get Key Menu Liên Quân (Bấm vào nhảy sang GTraffic rồi sang fnote v25Ak1) -->
     <div class="action-card">
       <div class="card-info">
         <div class="card-icon icon-key">
@@ -295,7 +295,7 @@
       </button>
     </div>
 
-    <!-- Mục 3: Nhận Acc Liên Quân Free (Link fnote acc của bạn) -->
+    <!-- Mục 3: Nhận Acc Liên Quân Free -->
     <div class="action-card">
       <div class="card-info">
         <div class="card-icon icon-acc">
@@ -328,11 +328,10 @@
     setInterval(updateClock, 1000);
     updateClock();
 
-    // 2. Chuyển hướng Get Key Liên Quân qua GTraffic an toàn hệ thống
+    // 2. Chuyển hướng Get Key qua GTraffic -> Sau khi vượt link xong sẽ tự động mở fnote v25Ak1
     document.getElementById('getKeyBtn').addEventListener('click', function() {
-      sessionStorage.setItem("g_passed_verify", "true");
-      const resultPageUrl = "https://bokoten09.github.io/auto-key-website/result.html";
-      window.location.href = `https://gtraffic.io/QcD5iTe?redirect=${encodeURIComponent(resultPageUrl)}`;
+      const fnoteUrl = "https://fnote.net/notes/v25Ak1";
+      window.location.href = `https://gtraffic.io/QcD5iTe?redirect=${encodeURIComponent(fnoteUrl)}`;
     });
   </script>
 </body>
