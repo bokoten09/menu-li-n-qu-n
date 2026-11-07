@@ -182,12 +182,6 @@
       font-size: 16px;
       font-weight: 700;
       color: #2d3436;
-      margin-bottom: 4px;
-    }
-
-    .card-text p {
-      font-size: 13px;
-      color: #636e72;
     }
 
     .btn-action {
@@ -247,7 +241,6 @@
   <!-- Profile Section -->
   <main class="profile-card">
     <div class="avatar-wrapper">
-      <!-- Tải file avatar.png lên repository menu-lien-quan -->
       <img src="avatar.png" alt="Nguyen Bang Avatar">
     </div>
 
@@ -266,10 +259,8 @@
         </div>
         <div class="card-text">
           <h3>Tải Menu Liên Quân</h3>
-          <p>Phiên bản Mod mới nhất</p>
         </div>
       </div>
-      <!-- Thay link tải file APK/Mod của bạn tại thuộc tính href -->
       <a href="#" class="btn-action btn-download" id="downloadFile">
         Tải Ngay <i class="fa-solid fa-arrow-down"></i>
       </a>
@@ -283,10 +274,8 @@
         </div>
         <div class="card-text">
           <h3>Get Key Menu Liên Quân</h3>
-          <p>Vượt link GTraffic để lấy Key</p>
         </div>
       </div>
-      <!-- Nút vượt link qua GTraffic -->
       <button class="btn-action btn-key" id="getKeyBtn">
         Lấy Key <i class="fa-solid fa-chevron-right"></i>
       </button>
@@ -312,21 +301,9 @@
 
     // 2. Chuyển hướng Get Key Liên Quân qua GTraffic
     document.getElementById('getKeyBtn').addEventListener('click', function() {
-      // Cấp vé thông hành bảo mật
       sessionStorage.setItem("g_passed_verify", "true");
-
-      // Đường dẫn đích trả về file result.html (ở trang chủ hoặc trang result riêng)
       const resultPageUrl = "https://bokoten09.github.io/auto-key-website/result.html";
-      
-      // Chuyển hướng sang GTraffic với mã link của bạn
       window.location.href = `https://gtraffic.io/QcD5iTe?redirect=${encodeURIComponent(resultPageUrl)}`;
-    });
-
-    // 3. Xử lý nút tải file mod (Bạn có thể điền link trực tiếp vào đây)
-    document.getElementById('downloadFile').addEventListener('click', function(e) {
-      // Nếu chưa cài link tải, bạn chỉ cần thay đường dẫn file mod của bạn vào phần alert bên dưới
-      // e.preventDefault(); 
-      // window.location.href = "LINK_DOWNLOAD_CUA_BAN_TAI_DAY";
     });
   </script>
 </body>
